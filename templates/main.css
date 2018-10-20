@@ -1,0 +1,65 @@
+/* CIT 230 - De Marco Weekk 2 Template CSS */
+
+
+
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: 'Times New Roman';
+    color:  rgb(5, 39, 46);
+}
+
+h1 {
+    font-size: x-large;
+    color: style= rgb(28, 28, 29);
+}
+
+h2 {
+    font-size: large;
+    text-align: center;
+    border-bottom: 1px solid rgb(28, 28, 29);
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: auto;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background:
+	repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent 25%,
+		rgb(6, 7, 94) 0,
+		rgb(18, 35, 65) 50%
+	),
+	repeating-linear-gradient(
+		45deg,
+		transparent,
+		transparent 25%,
+		rgb(32, 136, 248) 0,
+		rgb(4, 52, 85) 50%
+	), rgba(211, 232, 238, 0.767);
+
+background-size: 10em 10em;
+background-blend-mode: multiply;
+	
+background-blend-mode: screen; ;
+    color: rgb(15, 170, 218);
+}
+
+header img {
+    width: auto;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: smaller;
+}
+
