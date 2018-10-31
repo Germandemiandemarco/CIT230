@@ -14,7 +14,7 @@ body {
         float: left;
         color: #fd0800;
         text-align: center;
-        padding: middle;
+        padding: .6rem 1rem;
         text-decoration: none;
         font-size: 15px;
       }
