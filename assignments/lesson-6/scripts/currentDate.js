@@ -29,7 +29,7 @@ var d = new Date();
 var n = month[d.getMonth()];
 var m = weekday[d.getDay()];
 
-document.getElementById("demo").innerHTML = m + " " + d.getDate() +", " + n + " " + d.getFullYear();
+document.getElementById("outPut").innerHTML = m + " " + d.getDate() +", " + n + " " + d.getFullYear();
 
 
 }
