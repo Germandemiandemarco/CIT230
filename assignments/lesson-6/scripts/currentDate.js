@@ -1,4 +1,4 @@
-
+function dateC() {
 
 
 var month = new Array();
@@ -30,4 +30,4 @@ var m = weekday[d.getDay()];
 
 document.getElementById("outPut").innerHTML = m + " " + d.getDate() +", " + n + " " + d.getFullYear();
 
-
+}
