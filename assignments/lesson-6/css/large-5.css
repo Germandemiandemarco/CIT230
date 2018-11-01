@@ -1,5 +1,8 @@
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  .class {
-    background: rgb(165, 2, 2);
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
   }
-}
