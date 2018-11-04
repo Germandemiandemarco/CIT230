@@ -3,7 +3,7 @@
 
    var tempL = parseFloat(document.getElementById('low').value);
    var tempH = parseFloat(document.getElementById('high').value);
-   var temperature = parseFloat(tempL + tempH / 2);
+   var temperature = parseFloat((tempL + tempH) / 2);
    
 
    speed = parseFloat(document.getElementById('windSpeed').value);
@@ -15,7 +15,5 @@ var result = windChill(temp, speed);
    
    document.getElementById('outputDiv').innerHTML = result;
   
-  
-   return farenheit;
-   
+
    
