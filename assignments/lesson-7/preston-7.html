@@ -12,50 +12,8 @@
      <link rel="stylesheet" href="/CIT230/assignments/lesson-7/css/large-5.css">
     </head>
 <body>
-     <script>
-     
-     function dateC() {
-
-var month = new Array();
-var weekday = new Array(7);
-
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-month[0] = "January";
-month[1] = "February";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
-
-var d = new Date();
-var n = month[d.getMonth()];
-var m = weekday[d.getDay()];
-
-document.getElementById("outPut").innerHTML = m + " " + d.getDate() +", " + n + " " + d.getFullYear();
-
-}
- </script>
-     <script>
-     
-     let mainNav = document.getElementById("js-menu");
-let navBarToggle = document.getElementById("js-navbar-toggle");
-
-navBarToggle.addEventListener("click", function() {
-  mainNav.classList.toggle("active");
-})
- </script>
+<script type="text/javascript" src="scripts/currentDate.js" async></script>
+<script type="text/javascript" src="scripts/main.js" async></script>
      <header>
 <img src="/CIT230/images/weather.png" alt="weather site logo">
         <div class="headertext">
@@ -176,7 +134,7 @@ alt=" Preston">
   <aside>
 <p class="Information"> - Location: Buenos Aires -  Argentina - XXXXXXXX - theweathersite@weather.com</p>
     </aside>
-<p class="Contact">  &#169;  - German D. De Marco Student  - dem17003@byui.edyu <span id="dateC"><p id="outPut"></p></span>
+<p class="Contact">  &#169;  - German D. De Marco Student  - dem17003@byui.edyu <span id="outPut"></span>
 </footer>
 </body>
 </html>
