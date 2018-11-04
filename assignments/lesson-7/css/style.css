@@ -107,7 +107,23 @@ body {
         }
 
 
-        
+      
+.weather p {
+          text-align: center;
+          margin: 10px;
+      }
+      div.weathersummary table, div.weatherdetails table{
+          margin: auto;
+          background-color: #A8D8FC;
+      }
+      table td {
+          padding: 5px 12px;
+          text-align: center;
+          border: 1px solid rgb(143, 212, 13);
+      }
+
+
+
 table {
 
   border-collapse: collapse;
@@ -115,7 +131,7 @@ table {
 }
 
 th, td {
-
+        flex-direction: column;
         text-align: left;   
         padding: 8xp;
 }
