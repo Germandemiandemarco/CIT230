@@ -24,27 +24,27 @@ body {
       
       }
 
- @media screen and (max-width: 600px) {
-        .navigation { list-style: none; padding-left: 0; }
-        .navigation li { display: none; }
-        nav button {
-          margin: auto;
+      @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child) {display: none;}
+        .navbar a.icon {
+          float: right;
           display: block;
         }
       }
+      
       @media screen and (max-width: 600px) {
-        ul.navigation.responsive {position: relative;}
-        ul.navigation.responsive li {
+        .navbar.responsive {position: relative;}
+        .navbar.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .navbar.responsive a {
           float: none;
           display: block;
-          text-align: center;
+          text-align: left;
         }
       }
-
-
-
-
-
 
       .navbar {
         font-size: 18px;
