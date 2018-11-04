@@ -6,9 +6,9 @@
 
 var  speed = parseFloat(document.getElementById('windSpeed').value);
 
-   var farenheit =  35.74 + 0.6215 * temperature - 35.75 * windSpeed+ 0.4275 * temperature * windSpeed;
+   var f =  35.74 + 0.6215 * temperature - 35.75 * windSpeed+ 0.4275 * temperature * windSpeed;
    
-   document.getElementById('outputDiv').innerHTML = farenheit;
+   document.getElementById('outputDiv').innerHTML = f;
   
 
    
