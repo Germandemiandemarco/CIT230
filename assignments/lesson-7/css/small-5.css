@@ -1,83 +1,20 @@
-@media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-
-
-
-    header > img {
-    
-        width: auto;
-        height: auto;
-        vertical-align: middle;
-    
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+      nav ul li a {
+      display: inline;
+      width: 16.66%;
+      float: left;
+      padding: 8px 16px;
     }
     
-    .headertext{
-        display: inline-block;
-        vertical-align: middle;
-    }
+    nav button { display:none; }  /* hamburger button does not need to be shown */
     
-    .headertex h1{
+    section.forecast { display: block; }  
     
-        font-size: 3rem;
-    }
-    .subheading {
-        font-size: 1.1rem;
-        color: rgb(233, 105, 19);
-        font-style: Ubuntu;
-    }
+      div.current img {
+          max-height: 250px;
+      }
+      
     
-    .currentconditions {
-    
-        display: inline-block;
-        height: auto;
-        margin: 1rem 0 1rem 5rem;
-            padding: 1.2rem;
-            vertical-align: middle;
-            color: #fff;
-            background-color: rgba(218, 163, 81, 0.75);
-            border: 1pt solid #e9512c;
-            font-size: 2.1rem;
-    }
-    
-    .currentconditions img {
-    
-        width:  auto;
-        height: auto;
-        align-content: auto;
-    }
-    
-    
-    
-    .headertext h3 { 
-    
-        font-size: 5rem;
-        font-style: Ubuntu
-    
-    }
-    
-    table {
-    
-        border-collapse: collapse;
-        width: 100%;
-    
-    }
-    
-    th, td {
-    
-            text-align: left;   
-            padding: 8xp;
-    }
-    
-    tr:nth-child(even){background-color: #e90606}
-    
-    th {
-        background-color: rgb(255, 7, 7);
-        color: white;
-    }
-}
+  
+  }
