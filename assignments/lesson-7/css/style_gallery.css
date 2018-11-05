@@ -9,7 +9,7 @@ body {
 
       header {
 
-        background-color: rgba(45, 224, 215, 0.925);
+        background-color: rgba(78, 148, 144, 0.925);
         text-align: center;
         padding: .5rem;
         color: #dde783;
@@ -21,7 +21,7 @@ body {
 
         header > img {
 
-          width: 100px;
+          width: auto;
           height: auto;
           vertical-align: middle;
       
@@ -34,7 +34,7 @@ body {
     }
     
     body {
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
    
@@ -101,19 +101,6 @@ color: rgb(201, 0, 0)
           border: 1px solid rgb(143, 212, 13);
       }
 
-
-
-
-
-section{margin:.5rem;}
-      img { width: 300px; height: auto;}
-      a {margin-right: 1rem;}
-      /* hover effect - not anchor tags around images */
-      img:hover {box-shadow: 5px 5px 10px gray;}
-      /* rounded corners - boxmodel */
-      .rocorn {border-radius: 5px 150px;}
-      /* simple opacity */
-      .opac {opacity: .5;}
 
       .gallery {
          display: grid;
