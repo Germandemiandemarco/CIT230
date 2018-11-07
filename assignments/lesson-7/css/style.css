@@ -13,7 +13,7 @@ body {
         text-align: center;
         padding: .5rem;
         color: #d6ec10;
-        font-display: Ubuntu;
+        font-family: Arial;
 
 
         }
@@ -29,7 +29,7 @@ body {
 
       * {
         box-sizing: border-box;
-        padding: 1 px;
+        padding: 1px;
         margin: 0;
     }
     
@@ -80,7 +80,7 @@ body {
 .preston {
 
 font-size: 14px;
-font-display:  Ubuntu;
+font-family:  'Josefin Sans';
 color: rgb(218, 13, 13)
 }
 
@@ -110,7 +110,7 @@ table {
 th, td {
         flex-direction: column;
         text-align: left;   
-        padding: 8xp;
+        padding: 8px;
 }
 
   tr:nth-child(even){background-color: #e96106}
