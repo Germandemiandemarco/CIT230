@@ -82,17 +82,19 @@ header > img {
     align-content: auto;
 }
 
-.weathersummary {
+.frontpage {margin: 10px auto;position: relative;}
+
+.weather {
 
     position: absolute;
-	top: 70px;
-	left: 60px;
+	top: 20px;
+	left: 40px;
 	background: radial-gradient(rgb(218, 13, 13), #4567aa;);
 	border: 1px solid #000;
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #fff;
-}
 
+}
 .headertext h3 { 
 
     font-size: 5rem;
