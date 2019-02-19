@@ -1,218 +1,145 @@
+/* I import some fonts and Scripts for my title */
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    background: coral;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      }
-<<<<<<< HEAD
-      
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-      }
-      
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      
-      .topnav a:hover {
-        background-color: #ddd;
-        color: rgb(43, 41, 41);
-      }
-      
-      .active {
-        background-color: #4CAF50;
-        color: white;
-      }
-      
-      .topnav .icon {
-        display: none;
-      }
-      
-      @media screen and (max-width: 600px) {
-        .topnav a:not(:first-child) {display: none;}
-        .topnav a.icon {
-          float: right;
-          display: block;
-        }
-      }
-      
-      @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
-        .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        .topnav.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-
+  background-color: rgb(250, 250, 250);
 }
-=======
-      
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.plate {
+  width: 410px;
+  margin: 10% auto;
 }
-
-body {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.navbar {
-  font-size: 18px;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-}
-
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links,
-.logo {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.main-nav li {
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 rgb(39, 39, 39),
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
   text-align: center;
-  margin: 15px auto;
 }
-
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
+.script {
+  font-family: "Seaweed Script";
+  color: rgb(243, 155, 55);
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
 }
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+.script span {
+  background-color: rgb(247, 244, 239);
+  padding: 0 0.3em;
 }
-
-.active {
+.script:before {
+  content:"";
   display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid rgb(247, 165, 43);
+}
+.text1 {
+  font-size: 60px;
+}
+.text2 {
+  font-size: 130px;
+}
+.text3 {
+  font-size: 100px;
 }
 
 
-  .main-nav li {
-    margin: 0;
+.weathertext {
+	width: 410px;
+	margin: 10% auto;
   }
 
-  .nav-links {
-    margin-left: 40px;
+
+/***************************** Termina Titulo *********************************/
+
+
+/***************************** Preston Sub *********************************/
+
+/* this is my Css code for the main Letters in my page */
+
+.textW{
+	color: #fff;
+	font-family: Arvo;
+	font-weight: bold;
+	text-shadow:
+	  -3px -3px 0  rgb(247, 133, 27),
+	  3px -3px 0  rgb(247, 133, 27),
+	  -3px 3px 0 rgb(247, 133, 27),
+	  3px 3px 0 rgb(240, 154, 57),
+	  4px 4px 0 #fff,
+	  5px 5px 0 #fff,
+	  6px 6px 0 #fff,
+	  7px 7px 0 #fff;
+	line-height: 0.8em;
+	letter-spacing: 0.1em;
+	transform: scaleY(0.7);
+	-webkit-transform: scaleY(0.7);
+	-moz-transform: scaleY(0.7);
+	margin:0;
+	text-align: center;
   }
 
-  .logo {
-    margin-top: 0;
+  .textW {
+	font-size: 80px;
   }
 
-  .navbar-toggle {
-    display: none;
+  /********************* Preston Sub ******************/
+
+  /*********************  ForeCast Begin *****************/
+
+  .img-fluid{
+
+    position: relative;
   }
 
-  .logo:hover,
-  .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
+/* Code for Image Box */
+
+.stats {
+  position: absolute;
+  bottom: 40px;
+  background: rgb(241, 241, 239);
+  right: 120px;
+  color: rgb(241, 208, 43);
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 5px;
+  background-color: rgb(175, 175, 170);
+  border-bottom-color:  rgb(117, 117, 114);
+  box-shadow: 0 0 10px rgb(117, 117, 114);
+  padding: 1.5rem;
+
+}
+
+  /********************* ForeCast End ******************/
+
+
+  /* Information and grid Box  */
+
+
+  .information {
+
+	border: 2px;
+	background: rgb(241, 241, 239); 
+	padding: 1.5rem;
+  box-shadow: 0 0 10px rgb(117, 117, 114);
+  position: relative;
+
   }
->>>>>>> a062f2e32026fb98cc77fa499f1b0493d30fa8d5
-
-
-header {
-
-background-color: rgba(245, 66, 11, 0.5);
-text-align: center;
-padding: .5rem;
-color: #d6ec10;
-}
-
-header > img {
-
-    width: 100px;
-    height: auto;
-    vertical-align: middle;
-
-}
-
-.headertext{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.headertex h1{
-
-    font-size: 3rem;
-}
-.subheading {
-    font-size: 1.1rem;
-    color: rgb(233, 105, 19);
-    font-style: Ubuntu;
-}
-
-.currentconditions {
-
-    display: inline-block;
-    height: auto;
-    margin: 1rem 0 1rem 5rem;
-        padding: 1.2rem;
-        vertical-align: middle;
-        color: rgb(240, 174, 51);
-        background-color: rgba(218, 163, 81, 0.75);
-        border: 1pt solid #e9512c;
-        font-size: 2.1rem;
-}
-
-.currentconditions img {
-
-    width:  100%;
-    height: 100%;
-    align-content: auto;
-}
-
-
-
-.headertext h3 { 
-
-    font-size: 5rem;
-    font-style: Ubuntu
-
-}
-
-table {
-
-    border-collapse: collapse;
-    width: 100%;
-
-}
-
-th, td {
-
-        text-align: left;   
-        padding: 8xp;
-}
-
-tr:nth-child(even){background-color: #e90606}
-
-th {
-    background-color: rgb(255, 7, 7);
-    color: white;
-}
