@@ -1,139 +1,118 @@
 <!doctype html>
+
 <html lang="en-us">
-<head>
+
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">                          
-     <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+    <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
      <meta name="description" content="The weather Site where the weather site catch phrase and other keywords">
      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-     <link href="/CIT230/assignments/lesson-6/css/style.css" rel="stylesheet">
-     <link rel="stylesheet" href="/CIT230/templates/normalize.css">
-     <link rel="stylesheet" href="/CIT230/assignments/lesson-6/css/small-5.css">
-     <link rel="stylesheet" href="/CIT230/assignments/lesson-6/css/large-5.css">
-    </head>
+    
+     <!---  Normalize and Stylesheet, in this case I prefer it for localhost -->
+    
+     <link href="C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\assignments\lesson-6\css\style.css" rel="stylesheet">
+     <link href="C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\assignments\lesson-6\css\normalize.css" rel="bootstrap">
+     
+     <!---- Bootstrap stylsheets -->
+     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+    <!--- Bootstrap Script -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+  </head>
 <body>
-  <script type="text/javascript" src="/CIT230/assignments/lesson-6/scripts/currentDate.js" ></script>
-  <script type="text/javascript" src ="/CIT230/assignments/lesson-6/scripts/main.js"></script> 
-     <header>
-<img src="/CIT230/images/weather.png" alt="weather site logo">
-        <div class="headertext">
-            <h1>The Mountain Pacific Weather Site </h1>
-            <div class="subheading"> The Weather in your eyes </div>
-            <div class="currenconditions">
-              <div style="text-align:right;"> <img src="/CIT230/images/sunny.png"  alt="Current Condition weather" ></div>
-                <p>Look the weather</p>
-        </div>
-        </div>
+  <header>
+
+    <!-- Title  with Script -->
+    <div class="plate">
+        <p class="script"><span>Preston</span></p>
+        <p class="shadow text1">Weather</p>
+        <p class="shadow text3"></p>
+        <p class="script"><span>Idaho</span></p>
+      </div>
     </header>
-<nav>
-<<<<<<< HEAD
-<button class="myTopnav" onclick="toggleHam()">&#9776;</button>
-=======
-<!-- <button class="myTopnav" onclick="toggleHam()">&#9776;</button>
->>>>>>> a062f2e32026fb98cc77fa499f1b0493d30fa8d5
-            <ul class="topnav">
-                    <li> <a class="active" href="#home">Home</a> </li>
-                   <li> <a href="#preston">Preston</a> </li>
-                   <li> <a href="#sodaSprings">Soda Springs</a> </li>
-                    <li> <a href="#fishHavent">Fish Haven</a> </li>
-                    <li> <a href="#stormCenter">Storm Center</a> </li>
-                    <li><a href="#gallery">Gallery</a> </li>
-                   <li> <a href="#gallery">Alert</a> </li>
-            </ul> -->
-  
-            <nav class="navbar">
-              <span class="navbar-toggle" id="js-navbar-toggle">
-                      <i class="fas fa-bars"></i>
-                  </span>
-              <a href="#" class="logo">Home</a>
-              <ul class="main-nav" id="js-menu">
-                <li>
-                  <a href="#" class="nav-links">Home</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-links">Preston</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-links">Soda Springs</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-links">Fish Haven</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-links">Storm Center</a>
-                </li>
-              </ul> 
-</nav>
+
+    <!-- Navegation Bar with bootstrap -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Home</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Preston <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fish Haven</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Storm center</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            
+          </form>
+        </div>
+      </nav>
+   
+   
+   
+   
 <main>
-    <div class="Preston">
-  <h2>Preston !</h2>
-                <picture>
-                    <source media="(max-width: 1600px)" srcset="/CIT230/images/cit230_image_franklinOriginal_Desktop.jpg 1200w">
-                    <source media="(max-width: 600px)" srcset="/CIT230/images/Smarthhones+.jpg 650w">
-                    <source media="(max-width: 750px)" srcset="/CIT230/images/Tabletview.jpg 750w">
-                    <source media="(max-width: 400px)" srcset="/CIT230/images/Smarthphones.jpg 350w">
-                    <img src="/CIT230/images/cit230_image_franklinOriginal.jpg" alt="Franklin">
-                </picture>
-</div>
-              
- <div class="weather">
-  <section class="weathersummary">
-    <h3>Weather Summary</h3>
-    <div class="weatherdetails">
-      <p class="label">Currently:</p>
-      <p class="value">Sunny</p>
-      <p class="label">Temperature:</p>
-      <p class="value">76 &deg;F</p>
-      <p class="label">Humidity:</p>
-      <p class="value">69%</p>
-      <p class="label">Precipitation:</p>
-      <p class="value">0 inches</p>
-      <p class="label">Wind Speed:</p>
-      <p class="value">5 mph</p>
-<section class="forecast">
-  <h3>High Temperature Forecast</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Day</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>Forecast</th>
-        <td>89&deg;F</td>
-        <td>87&deg;F</td>
-        <td>78&deg;F</td>
-        <td>75&deg;F</td>
-        <td>72&deg;F</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
 
-    </div>
-  </section>   
-</div>
-</div>
+  <div class="weatherText">
+          <p class="textW">Preston</p>
+        </div>
+    <!-- Responsive Image with different resoluions with the purpose do it responsive -->
+    <div class="img-fluid" alt="responsive image">
+      <picture>
+        <img srcset="
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_200.jpg 200w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_398.jpg 398w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_664.jpg 664w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_1271.jpg 1271w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_1400.jpg 1400w"  
+        sizes="(max-width: 1200px) 100vw, 1200px"
+        alt="Preston">
+        </picture>
+      <div class ="stats">
+        <p>Currently: Sunny </p>
+            
+            <p>Temperature: 76 &deg;<p>
+            
+            <p>Humidity: 69%</p>
+            
+            <p>Precipitation: 0 inches</p>
+            
+            <p>Wind Speed: 5 mph</p>
+            </div>
+      </div>
   </main>
+
+
+
+
+  <p class="information"> Location: Buenos Aires - Argentina - XXXXXXXX - theweathersite@weather.com</p>
   <footer>
-  <aside>
-<p class="Information"> - Location: Buenos Aires -  Argentina - XXXXXXXX - theweathersite@weather.com</p>
-    </aside>
-<p>  &#169;  - German D. De Marco Student  - dem17003@byui.edyu <span id="dateC()"> Date </span></p>
-</footer>
-<<<<<<< HEAD
-<script type="javascript/Text" src="/CIT230/assignments/lesson-6/scripts/currentDate.js" ></script>
-<script type="/CIT230/assignments/lesson-6/scripts/toogleHam().js" src ="/CIT230/assignments/lesson-6/scripts/toogleHam().js"></script>  
-=======
- 
+    <p class="Contact"> &#169; - German D. De Marco Student - dem17003@byui.edyu <span id="outputDate"></span></p>
+  </footer>
 
->>>>>>> a062f2e32026fb98cc77fa499f1b0493d30fa8d5
+
+  <script src="/CIT230/assignments/lesson-7/scripts/currentDate.js"></script>
+
 </body>
-</html>
 
+</html>
