@@ -1,7 +1,12 @@
+/* I import some fonts and Scripts for my title */
+
+
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(255, 255, 255);
 }
@@ -74,7 +79,7 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
 .navigation { list-style: none; text-align: center;   }
   .navigation li:first-child {display: block}      /****** { display: block;} padding: .75rem;	text-align: center;	text-decoration: none; ****/
   .navigation li { display: none;}
-  .navigation a {	display: block;	color: rgb(247, 133, 27); padding: .75rem;	text-align: center;	text-decoration: none; flex: 1 1 auto;}
+  .navigation a {	display: block;	color: rgb(247, 133, 27); padding: .75rem;	text-align: center;	text-decoration: none; flex: 1 1 auto;font-size: 18px; }
   .navigation a:hover {	color: rgb(250, 122, 3); background-color: #fff; font-weight: 700;	}
 
 /* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
@@ -123,17 +128,18 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
 
   /********************* Preston Sub ******************/
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr ;
+    box-shadow: 0 0 30px #333;
+}
+
   /*********************  ForeCast Begin *****************/
 
 
 /* Code for Image Box */
 
-.stats {
-display: grid;
-grid-template-columns:  1fr ;
-grid-column-gap: .25rem;
 
-}
 
   /********************* ForeCast End ******************/
 
@@ -143,37 +149,27 @@ grid-column-gap: .25rem;
 
   .information {
 
-	border: 1px;
-	background: rgb(228, 228, 227); 
+	border: 2px;
+	background: rgb(241, 241, 239); 
 	padding: 1.5rem;
-  box-shadow: 0 0 10px rgb(34, 34, 33);
+  box-shadow: 0 0 10px rgb(117, 117, 114);
   position: relative;
+  text-align: center;
 
   }
 
+  .contact{
 
-  div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
     text-align: center;
-  }
   
-  
+    }
+
+
+
   .imagenesBox {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0 0 50px #333;
 }
 
 div.imagenesBox figure img {
@@ -182,23 +178,19 @@ div.imagenesBox figure img {
 
 figcaption {
     text-align: center;
-    color: #383737;
+    color: #353636;
     font-size: 18px;
 }
 
-figure.gallery:hover {
-    box-shadow: 5px 5px 10px rgb(7, 7, 7);
+
+ @media only screen and (max-width: 700px) {
+  .imagenesBox { display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-columns: none; }
+  .plate {
+    font-size-adjust: auto;
+    width:80%;
+
+  }
+
 }
-
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .h3 {
-
-text-align: center;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-  }
