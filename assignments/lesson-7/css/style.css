@@ -142,6 +142,7 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
   .plate {
     font-size-adjust: auto;
     width:80%;
+	  text-align: auto;
 
   }
 
