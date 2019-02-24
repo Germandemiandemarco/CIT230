@@ -189,16 +189,18 @@ figcaption {
   grid-template-columns: 1fr ;
   grid-template-columns: none; }
   .plate {
-    font-size-adjust: auto;
+    font-size-adjust: 0.50;
     width:80%;
 
   }
 	 .container {
 		 {
 	 grid-template-columns: 1fr ;
-			 grid-template-columns: none; }
+			 grid-template-columns: none; 
+		 } }
+	 
   .textw {
-    font-size-adjust: auto;
+    font-size-adjust: 0.50;
     width:50%;
 	  text-align: left;
 		 }
