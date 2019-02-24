@@ -196,7 +196,7 @@ figcaption {
 	 .container {
 	 grid-template-columns: 1fr ;
   grid-template-columns: none; }
-  .h3 {
+  .textw {
     font-size-adjust: auto;
     width:50%;
 	  text-align: left;
