@@ -164,6 +164,12 @@ grid-column-gap: .25rem;
     }
 
 
+.mainImg {
+    display: grid;
+    grid-template-columns: 1fr ;
+    box-shadow: 0 0 50px #333;
+}
+
 
   .imagenesBox {
     display: grid;
