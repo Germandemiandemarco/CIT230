@@ -1,153 +1,97 @@
-<!doctype html>
+!doctype html>
+
 <html lang="en-us">
-<head>
+<!--  -->
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">                          
-     <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
-     <meta name="description" content="The weather Site where the weather site catch phrase and other keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
+     <meta name="description" content="De Marco Student Wheather Site">
      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-     <link href="/CIT230/assignments/lesson-7/css/style.css" rel="stylesheet">
-     <link rel="stylesheet" href="/CIT230/templates/normalize.css">
-     <link rel="stylesheet" href="/CIT230/assignments/lesson-7/css/small-5.css">
-     <link rel="stylesheet" href="/CIT230/assignments/lesson-7/css/large-5.css">
-    </head>
-<body>
-     <header>
-<img src="/CIT230/images/weather.png" alt="weather site logo">
-        <div class="headertext">
-            <h1>The Mountain Pacific Weather Site </h1>
-            <div class="subheading"> The Weather in your eyes </div>
-            <div class="currenconditions">
-              <div style="text-align:right;"> <img src="/CIT230/images/sunny.png"  alt="Current Condition weather" ></div>
-                <p>Look the weather</p>
-        </div>
-        </div>
-    </header>
-<nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-        <a href="#" class="logo">Home</a>
-        <ul class="main-nav" id="js-menu">
-            <li>
-                <a href="#" class="nav-links">Preston</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Products</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Soda Springs</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Fish Haven</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Storm Center</a>
-            </li>
-            <li>
-                <a href="/CIT230/assignments/lesson-7/gallery-7.html" class="nav-links">Gallery</a>
-            </li>
-            <li>
-                <a href="#" class="nav-links">Alert</a>
-            </li>
-
-        </ul>
-</nav>
-<main>
-    <div class="Preston">
-  <h2>Preston !</h2>
-                                  
-<picture>
-<img
-sizes="(max-width: 1400px) 100vw, 1400px"
-srcset="
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_200.jpg 200w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_398.jpg 398w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_545.jpg 545w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_664.jpg 664w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_784.jpg 784w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_894.jpg 894w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_992.jpg 992w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_1086.jpg 1086w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_1184.jpg 1184w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_1271.jpg 1271w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_1352.jpg 1352w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_1396.jpg 1396w,
-/CIT230/images/cit230_image_franklinOriginal_svggtv_c_scale,w_1400.jpg 1400w"
-src="cit230_image_franklinOriginal_svggtv_c_scale,w_1400.jpg"
-alt=" Preston">
-</picture>
     
-<!-- <picture>
-                    <source media="(max-width: 1600px)" srcset="/CIT230/images/cit230_image_franklinOriginal_Desktop.jpg 1200w">
-                    <source media="(max-width: 600px)" srcset="/CIT230/images/Smarthhones+.jpg 650w">
-                    <source media="(max-width: 750px)" srcset="/CIT230/images/Tabletview.jpg 750w">
-                    <source media="(max-width: 400px)" srcset="/CIT230/images/Smarthphones.jpg 350w">
-                    <img src="/CIT230/images/cit230_image_franklinOriginal.jpg" alt="Franklin">
-                </picture>
+     <!---  Normalize and Stylesheet, in this case I prefer it for localhost -->
+    
+     <link href="C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\assignments\lesson-6\css\style.css" rel="stylesheet">
+     <link href="C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\assignments\lesson-6\css\normalize.css" rel="stylesheet">
+     
 
-                </picture>  -->
-</div>
-              
- <div class="weather">
-  
-  <section class="weathersummary">
-    <h3>Weather Summary</h3>
-    <div class="Conditions">
-    <table>
-    <tr>
-    <td id="high">High: 85° F</td>
-    <td id="low">Low: 60° F</td>
-    </tr>
-    <tr>
-    <td>Precipitation:</td>
-     <td>0%</td>
-      </tr>
-      <tr> <td>Wind Speed:</td>
-        <td id="windSpeed" >5 mph SW</td> </tr>
-<tr><td>Wind Chill:</td>
-<td id="outputDiv"></td>
-</tr>
-</table>
-<section class="forecast">
-  <h4>High Temperature Forecast</h4>
-  <table>
-    <thead>
-      <tr>
-        <th>Day</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>Forecast</th>
-        <td>89&deg;F</td>
-        <td>87&deg;F</td>
-        <td>78&deg;F</td>
-        <td>75&deg;F</td>
-        <td>72&deg;F</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+  </head>
+<body>
 
-    </div>
-  </section>   
-</div>
+    <script type="text/javascript" src="C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\assignments\lesson-6\scripts\toggleMenu.js"></script>
+ 
+    <header>
+
+    <!-- Title  with Script -->
+    <div class="plate">
+        <p class="script"><span>Preston</span></p>
+        <p class="shadow text1">Weather</p>
+        <p class="shadow text3"></p>
+        <p class="script"><span>Idaho</span></p>
+      </div>
+    </header>
+
+    <!-- Navegation Bar  -->
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#" title="Preston">Preston</a></li>
+        <li><a href="#" title="Sonda Springs">Sonda Springs</a></li>
+        <li><a href="#" title="Fish Havent">Fish Havent</a></li>
+        <li><a href="#" title="Storm Center">Storm Center</a></li>
+        <li><a href="#" title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+   
+   
+   
+   
+<main class="container">
+
+  <div class="weatherText">
+          <p class="textW">Preston</p>
+        </div>
+    <!-- Responsive Image with different resoluions with the purpose do it responsive -->
+    <div class="mainImg" alt="responsive image">
+      <picture>
+        <img 
+        sizes="(max-width: 1200px) 100vw, 1200px"
+        srcset="
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_200.jpg 200w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_398.jpg 398w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_664.jpg 664w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_1271.jpg 1271w,
+        C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\images\cit230_image_franklinOriginal_svggtv_c_scale,w_1400.jpg 1400w"  
+        sizes="(max-width: 1200px) 100vw, 1200px"
+        alt="Preston">
+        </picture>
+      <div class ="stats">
+          <h3>Weather Summary</h3>
+          <div class="conditions">
+          <p class="label">Currently: </p>
+          <p class="value">Sunny</p>
+          <p class="label">High: </p>
+          <p class="value">76 °F</p>
+          <p class="label">WindChill: <span id="conversion"></span> &deg;F</p>
+          <p class="label"> Windspeed: </p>
+          <p class="value"> 5 mph</p>
+
+      </div>
   </main>
+
+
+
+
+  <p class="information"> Location: Buenos Aires - Argentina - XXXXXXXX - theweathersite@weather.com</p>
   <footer>
-  <aside>
-<p class="Information"> - Location: Buenos Aires -  Argentina - XXXXXXXX - theweathersite@weather.com</p>
-    </aside>
-<p class="Contact">  &#169;  - German D. De Marco Student  - dem17003@byui.edyu,  <span id="outputDate"></span></p>
-</footer>
-<script src="/CIT230/assignments/lesson-7/scripts/currentDate.js" async></script>
-<script src="/CIT230/assignments/lesson-7/scripts/toogleHam().js" async></script>
-<script src="/CIT230/assignments/lesson-7/scripts/windChild.js" async></script>
-<script src="/CIT230/assignments/lesson-7/scripts/main.js" async></script>
+    <p class="contact"> &#169; - German D. De Marco Student - dem17003@byui.edyu <span id="outputDate"></span></p>
+  </footer>
+
+
+  <script src="/CIT230/assignments/lesson-7/scripts/currentDate.js"></script>
+  <script src="C:\Users\gddemarc\Downloads\CIT230-master\CIT230-master\assignments\lesson-7\scripts\windChill.js"></script>
 </body>
+
 </html>
