@@ -193,17 +193,19 @@ figcaption {
     width:80%;
 
   }
-	 .container {
-		 {
+	 
+.container {
+		 
 	 grid-template-columns: 1fr ;
 			 grid-template-columns: none; 
-		 } }
+		 } 
 	 
-  .textw {
+  
+.textw {
     font-size-adjust: 0.50;
     width:50%;
 	  text-align: left;
 		 }
-	 }
+	 
 
 }
