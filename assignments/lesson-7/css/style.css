@@ -141,12 +141,7 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
 
 /* Code for Image Box */
 
-.stats {
-display: grid;
-grid-template-columns:  1fr 1fr;
-grid-column-gap: .25rem;
 
-}
 
   /********************* ForeCast End ******************/
 
