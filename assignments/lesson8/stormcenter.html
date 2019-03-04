@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="en-us">
+<!--  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
+     <meta name="description" content="De Marco Student Wheather Site">
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
+     <!---  Normalize and Stylesheet, in this case I prefer it for localhost -->
+    
+     <link href="/Demarcostudent/assignments/lesson-8/css/styleStormCenter.css" rel="stylesheet">
+     <link href="/Demarcostudent/assignments/lesson-7/css/normalize.css" rel="stylesheet">
+     
+
+  </head>
+<body>
+
+ 
+    <header>
+
+    <!-- Title  with Script -->
+    <div class="plate">
+        <p class="script"><span>Preston</span></p>
+        <p class="shadow text1">Weather</p>
+        <p class="shadow text3"></p>
+        <p class="script"><span>Idaho</span></p>
+      </div>
+    </header>
+
+    <!-- Navegation Bar  -->
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="/Demarcostudent/assignments/lesson-7/" title="Preston">Preston</a></li>
+        <li><a href="#" title="Sonda Springs">Sonda Springs</a></li>
+        <li><a href="#" title="Fish Havent">Fish Havent</a></li>
+        <li><a href="#" title="Storm Center">Storm Center</a></li>
+        <li><a href="/Demarcostudent/assignments/lesson-7/gallery-7.html " title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+   
+   
+
+   
+<main class="container">
+<div>
+<form action="/my-handling-form-page" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+
+  <div>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_email">
+  </div>
+  
+    <div>
+    <label for="mail">Phone:</label>
+    <input type="email" id="mail" name="user_email">
+  </div>
+
+  <div>
+    <label for="mail">Zone:</label>
+    <input type="email" id="mail" name="user_email">
+  </div>
+  
+  
+  <div>
+  <fieldset>
+		<label for="rating">Alert (1 to 10):</label>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+    <span id="ratingvalue">5</span><br>
+  </div>
+
+    <div class="weatherType">
+
+    <legend>Please select your weather warning</legend>
+    <div>
+      <input type="radio" id="contactChoice1"
+       name="contact" value="email" checked>
+      <label for="contactChoice1">Avalanche</label>
+
+      <input type="radio" id="contactChoice2"
+       name="contact" value="phone">
+      <label for="contactChoice2">Flood</label>
+
+      <input type="radio" id="contactChoice3"
+       name="contact" value="mail">
+      <label for="contactChoice3">Thunderbolt</label>
+    </div>
+ 
+      
+    </div>
+    
+    
+  <div>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+ 
+  
+  
+  <div class="button">
+    <button type="submit">Send your message</button>
+  </div>
+  
+  
+</form>
+  
+  </div>
+
+
+
+  </main>
+
+
+
+  <p class="information"> Location: Buenos Aires - Argentina - XXXXXXXX - theweathersite@weather.com</p>
+  <footer>
+    <p class="contact"> &#169; - German D. De Marco Student - dem17003@byui.edyu <span id="outputDate"></span></p>
+  </footer>
+
+   <script src="/Demarcostudent/assignments/lesson-7/scripts/toggleMenu.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/currentDate.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/windChill.js"></script>
+</body>
+
+</html>
