@@ -1,6 +1,3 @@
-/* I import some fonts and Scripts for my title */
-
-
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 
@@ -126,25 +123,7 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
 	font-size: 60px;
   }
 
-  /********************* Preston Sub ******************/
 
-.container {
-    display: grid;
-    box-shadow: 0 0 30px #333;
-}
-
-
-  /*********************  ForeCast Begin *****************/
-
-
-/* Code for Image Box */
-
-
-
-  /********************* ForeCast End ******************/
-
-
-  /***** Information and grid Box  */
 
 
   .information {
@@ -166,122 +145,30 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
 
 
 
-  .imagenesBox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    box-shadow: 0 0 50px #333;
-}
-
-div.imagenesBox figure img {
-    width: 100%;
-}
-
-figcaption {
-    text-align: center;
-    color: #353636;
-    font-size: 18px;
-}
-
-
-	 
-.container  {
-   max-height: 200px
-}
-
-* {
-  
-  grid-template-columns: 1fr 1fr;
-}
-      .container {
-        width: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-        
-    }
-
-    .container  {
-        max-height: auto;
-    }
-
-
-
-
-
-form {
-  /* Just to center the form on the page */
-  margin: 0 auto;
-  width: 400px;
-  background-color: lightblue;
-  fonts-family: Ubuntu, sans-serif;
-
-  /* To see the limits of the form */
-  padding: 1em;
-  border: 5px solid #CCC;
-  border-radius: 1em;
-}
-
-div + div {
-  margin-top: 2em;
-}
-
-label {
-  /* To make sure that all label have the same size and are properly align */
-  display: inline-block;
-  width: auto;
-  text-align: auto;
-}
-
-input, textarea {
-  /* To make sure that all text field have the same font settings
-     By default, textarea are set with a monospace font */
-  font: 2em sans-serif;
-
-  /* To give the same size to all text field */
-  width: 300 px;
-
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-
-  /* To harmonize the look & feel of text field border */
-  border: 5px solid #999;
-}
-
-input:focus, textarea:focus {
-  /* To give a little highligh on active elements */
-  border-color: #000;
-}
-
-
-textarea {
-  /* To properly align multiline text field with their label */
-  vertical-align: top;
-
-  /* To give enough room to type some text */
-  height: 5em;
-
-  /* To allow users to resize any textarea vertically
-     It works only on Chrome, Firefox and Safari */
-  resize: vertical;
-}
-
-.button {
-  /* To position the buttons to the same position of the text fields */
-  padding-left: 150px; /* same size as the label elements */
-}
-
-button {
-  /* This extra magin represent the same space as the space between
-     the labels and their text fields */
-  margin-left: .6em;
-}
-
-.weatherType {
-  
-  text-align: rigth;
-  margin-right: 10px;
-  line-height: 10px;
+@media only screen and (min-width: 64em) {
+  .container {display: grid; grid-template-columns: 1fr ; grid-gap: 5px;}
   
 }
+
+
+h1 { fonts-family: sans-serif;
+text-align: center;
+color: lightblue;}
+
+.container {display: grid; grid-template-columns: 1fr 1fr; grid-gap: 5px;}
+
+input,button,select,textarea {padding: 0.7rem;}
+fieldset { background-color:rgb(212, 208, 208);}
+
+input[type=button] { color: blue; }
+input[type=button]:hover { background-color: blue; color: #fff; }
+input:invalid { background-color: #bb0000; color: #fff;}
+input:valid   {	background-color: lightblue;  color: #000;}
+.enviar {
+  align: center;
+  
+}
+
 
 .weatherType {
 
@@ -298,5 +185,3 @@ line-height: 10px;
 	  text-align: left;
 		 }
 	 
-
-}
