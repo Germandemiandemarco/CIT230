@@ -45,82 +45,83 @@
     </nav>
    
    
-
-   
-<main class="container">
-<form action="/my-handling-form-page" method="post">
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name">
-  </div>
-
-  <div>
-    <label for="mail">E-mail:</label>
-    <input type="email" id="mail" name="user_email">
-  </div>
+<main>
+  <h1> Weather Site Form </h1> 
   
-    <div>
-    <label for="mail">Phone:</label>
-    <input type="email" id="mail" name="user_email">
-  </div>
-<div>
-  <label for="zipCode"> Zip Code: </label>
-  <input id="number" type="number" value="0">
-  </div>
-  
-  <div>
-    <label for="mail">Zone:</label>
-    <input type="email" id="mail" name="user_email">
-  </div>
-  
-  
-  <div>
-  <fieldset>
-		<label for="rating">Alert (1 to 10):</label>
-		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-    <span id="ratingvalue">5</span><br>
-  </div>
-
-    <div class="weatherType">
-
-    <legend>Please select your weather warning</legend>
-    <div>
-      <input type="radio" id="contactChoice1"
-       name="contact" value="email" checked>
-      <label for="contactChoice1">Avalanche</label>
-
-      <input type="radio" id="contactChoice2"
-       name="contact" value="phone">
-      <label for="contactChoice2">Flood</label>
-
-      <input type="radio" id="contactChoice3"
-       name="contact" value="mail">
-      <label for="contactChoice3">Thunderbolt</label>
-    </div>
- 
-      
-    </div>
-    
-    
-  <div>
-    <label for="msg">Message:</label>
-    <textarea id="msg" name="user_message"></textarea>
-  </div>
- 
-  
-  
-  <div class="button">
-    <button type="submit">Send your message</button>
-  </div>
-  
-  
-</form>
+<div class="container">
+	<fieldset>
+  <label for="nam"> Name </label> <br>
+  <input type="text" name="fname"><br>
+  <label for="num">Zip Code</label><br>
+		<input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"><br>
+		<label for="p">Phone:</label><br>
+		<input type="tel" name="phone" placeholder="###-###-####"><br>
+		<label for="email">eMail:</label> <br>
+		<input type="email" name="email" placeholder="user@email.org"><br>
+		<legend>Personal Details</legend>
+		<div>
+      <legend><it> Under Risk </it> </legend>
+			<input type="radio" id="time1" name="time" value="8" checked>
+			<label for="time1">High Danger</label>
+		</div>
+		<div>
+			<input type="radio" id="time2" name="time" value="9">
+			<label for="time2">Danger</label>
+		</div>
+		<div>
+			<input type="radio" id="time3" name="time" value="10">
+			<label for="time3">Warning</label>
+		</div>
+		<div>
+			<input type="radio" id="time4" name="time" value="11">
+			<label for="time4">Advice</label>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Weather Issues</em></legend>
+		<div>
+			<input type="checkbox" id="coding" name="interest" value="coding" checked>
+			<label for="coding">Flash Flood</label>
+		</div>
+		<div>
+			<input type="checkbox" id="music" name="interest" value="music">
+			<label for="music">Hurricane</label>
+		</div>
+		<div>
+			<input type="checkbox" id="football" name="interest" value="football">
+			<label for="football">Thunderstorm</label>
+		</div>
+		<div>
+			<input type="checkbox" id="gardening" name="interest" value="gardening">
+			<label for="gardening">Tornado</label>
+		</div>
 	
+		<label for="rating">Storm Severity (1 to 10):</label><br>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span><br>
 
+		<label for="browsers">Storm Region: </label><br>
+		<input name="browsers" list="browserlist">
+		<datalist id="browserlist">
+			<option value="Preston">
+  	  <option value="Soda Springs">
+      <option value="Fish Haven">
+		</datalist> <br>
+	
+		<label for="theDate">Storm Date:</label><br>
+		<input type="date" name="theDate"><br>
+  <legend> Write a comment </legend>
+  <label><textarea rows="4" cols="50" name="comment" form="stormCenter" placeholder=""></textarea></label>
+  
+	</fieldset>
 
+  <div class="enviar">
+<input type="submit">
+  </div>
 
-  </main>
+  </fieldset>
 
+</main>
 
 
   <p class="information"> Location: Buenos Aires - Argentina - XXXXXXXX - theweathersite@weather.com</p>
@@ -134,3 +135,4 @@
 </body>
 
 </html>
+
