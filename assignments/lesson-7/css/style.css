@@ -126,26 +126,7 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
 	font-size: 60px;
   }
 
-  /********************* Preston Sub ******************/
 
-.container {
-    display: grid;
-    grid-template-columns: auto ;
-    box-shadow: 0 0 30px #333;
-}
-
-
-  /*********************  ForeCast Begin *****************/
-
-
-/* Code for Image Box */
-
-
-
-  /********************* ForeCast End ******************/
-
-
-  /***** Information and grid Box  */
 
 
   .information {
@@ -166,39 +147,34 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
     }
 
 
+h1 { fonts-family: sans-serif;
+text-align: center;
+color: lightblue;}
 
-  .imagenesBox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    box-shadow: 0 0 50px #333;
+
+.container {display: grid;
+  grid-template-columns: auto; grid-gap: 5px;}
+
+input,button,select,textarea {padding: 0.7rem;}
+fieldset { background-color:rgb(212, 208, 208);}
+
+input[type=button] { color: blue; }
+input[type=button]:hover { background-color: blue; color: #fff; }
+input:invalid { background-color: #bb0000; color: #fff;}
+input:valid   {	background-color: lightblue;  color: #000;}
+.enviar {
+  align: center;
+  
 }
 
-div.imagenesBox figure img {
-    width: 100%;
+
+.weatherType {
+
+text-align: rigth;
+margin-right: 10px;
+line-height: 10px;
+
 }
-
-figcaption {
-    text-align: center;
-    color: #353636;
-    font-size: 18px;
-}
-
-
- @media only screen and (max-width: 700px) {
-  .imagenesBox { display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-columns: none; }
-  .plate {
-    font-size-adjust: 0.50;
-    width:80%;
-
-  }
-	 
-.container {
-		 
-	 grid-template-columns: 1fr ;
-			 grid-template-columns: none; 
-		 } 
 	 
   
 .textw {
@@ -207,5 +183,3 @@ figcaption {
 	  text-align: left;
 		 }
 	 
-
-}
