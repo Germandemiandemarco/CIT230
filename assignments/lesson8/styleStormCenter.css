@@ -1,7 +1,8 @@
+/* I import some fonts and Scripts for my title */
+
+
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
-
-
 
 * {
   box-sizing: border-box;
@@ -146,18 +147,13 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
     }
 
 
-
-@media only screen and (min-width: 64em) {
-  .container {display: grid; grid-template-columns: 1fr ; grid-gap: 5px;}
-  
-}
-
-
 h1 { fonts-family: sans-serif;
 text-align: center;
 color: lightblue;}
 
-.container {display: grid; grid-template-columns: 1fr 1fr; grid-gap: 5px;}
+
+.container {display: grid;
+  grid-template-columns: auto; grid-gap: 5px;}
 
 input,button,select,textarea {padding: 0.7rem;}
 fieldset { background-color:rgb(212, 208, 208);}
