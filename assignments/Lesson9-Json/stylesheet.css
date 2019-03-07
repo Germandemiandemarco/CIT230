@@ -1,4 +1,5 @@
 /* || general styles */
+* { background-color: lightblue;}
 
 html {
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
@@ -6,18 +7,19 @@ html {
 
 body {
   width: 800px;
-  margin: 0 auto;
+  margin: 2 auto;
 }
 
 h1, h2 {
-  font-family: 'Faster One', cursive;
+  font-family: 'Comics', cursive;
 }
 
 /* header styles */
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
+  font-color: #FFA500;
 }
 
 header p {
@@ -29,12 +31,12 @@ header p {
 /* section styles */
 
 section article {
-  width: 33%;
+  width: 30%;
   float: left;
 }
 
 section p {
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 section ul {
@@ -43,6 +45,6 @@ section ul {
 
 h2 {
   font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
