@@ -1,0 +1,135 @@
+* {
+   box-sizing: border-box;
+  
+    background-repeat: repeat-x;
+ }
+ body {
+   background-color: rgb(255, 255, 255);
+ }
+ 
+ header { background-image: url("https://www.publicdomainpictures.net/pictures/130000/nahled/orange-top-gradient-background.jpg");
+ font-family: Arvo;
+ text-align: center;
+  border: 4px;
+   box-shadow: 0 2px 40px;
+   font-size: 30px;
+   
+ }
+ 
+ .weathertext {
+    width: 410px;
+    margin: 10% auto;
+   }
+ 
+ 
+ /***************************** Termina Titulo *********************************/
+ 
+ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
+ .navigation { list-style: none; text-align: center;   }
+   .navigation li:first-child {display: block}      /****** { display: block;} padding: .75rem;	text-align: center;	text-decoration: none; ****/
+   .navigation li { display: none;}
+   .navigation a {	display: block;	color: rgb(247, 133, 27); padding: .75rem;	text-align: center;	text-decoration: none; flex: 1 1 auto;font-size: 18px; }
+   .navigation a:hover {	color: rgb(250, 122, 3); background-color: #fff; font-weight: 700;	}
+ 
+ /* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+   <ul class="navigation responsive">
+   */
+    .responsive li { display: block; }
+ 
+ /* Media Query for medium + screens */
+ @media only screen and (min-width: 45em) {
+   .navigation li:first-child { display: none;	}
+    .navigation li { display: inline-block; margin-right: 1rem; flex: 1 1 auto;}	
+   .navigation li a { color:rgb(247, 133, 27)}
+   .navigation, .container { flex-direction: row; }
+ }
+ 
+ /***************************** Preston Sub *********************************/
+ 
+ 
+   .information {
+ 
+    border: 2px;
+    background: rgb(241, 241, 239); 
+    padding: 1.5rem;
+   box-shadow: 0 0 10px rgb(117, 117, 114);
+   position: relative;
+   text-align: center;
+ 
+   }
+ 
+   .contact{
+ 
+     text-align: center;
+   
+     }
+ 
+ 
+ h2 { font-family: sans-serif;
+ text-align: center;
+ color: orange;
+   
+   
+ font-size: 40px;}
+ 
+ 
+ .container {display: grid;
+   grid-template-columns: 1fr 1fr 1fr; grid-gap: 5px;}
+ 
+ 
+ .weatherType {
+ 
+ 
+ margin-right: 10px;
+ line-height: 10px;
+ 
+ }
+     
+   
+ .textw {
+     font-size-adjust: 0.50;
+     width:50%;
+      text-align: left;
+        }
+     
+ 
+ .cities {
+     display: grid;
+     grid-gap: 10px;
+     margin-bottom: 5%;
+   grid-template-columns: 1fr 1fr 1fr;
+ }
+ 
+ .town {
+     border: 3px solid grey;
+     padding: 5px;
+     max-width: 320px;
+     background-color: rgb(230, 173, 88);
+ box-shadow: 3px 10px 16px 2px rgba(0,0,0,0.75);
+ }
+ 
+ 
+ .town h3 {
+     text-align: center;
+     font-size: 15px;
+ }
+ 
+ img{
+   opacity: 0.8; }
+ 
+ @media only screen and (max-width: 600px) {
+   
+   .cities {
+     display: grid;
+     grid-gap: 5px;
+     margin-bottom: 5%;
+   grid-template-columns: 1fr;
+ }
+   
+ }
+ 
+ 
+ footer {
+     background-color: #cdcfd3;
+     border: 1px solid black;
+ }
