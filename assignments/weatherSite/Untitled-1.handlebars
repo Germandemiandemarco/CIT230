@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en-us">
+<!--  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
+     <meta name="description" content="De Marco Student Wheather Site">
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
+     <!---  Normalize and Stylesheet, in this case I prefer it for localhost -->
+    
+     <link href="/Demarcostudent/assignments/lesson-7/css/style.css" rel="stylesheet">
+     <link href="/Demarcostudent/assignments/lesson-7/css/normalize.css" rel="stylesheet">
+     
+</head>
+<body>
+
+<header>   
+        <img src="" class="logo" alt="">
+
+        <div class="heading">
+            <h1 class="site-name">Eyes in the Weather</h1>
+
+        </div>
+    </header>
+
+    <!-- Navegation Bar  -->
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="/Demarcostudent/assignments/lesson-7/" title="Preston">Preston</a></li>
+        <li><a href="#" title="Sonda Springs">Sonda Springs</a></li>
+        <li><a href="#" title="Fish Havent">Fish Havent</a></li>
+        <li><a href="#" title="Storm Center">Storm Center</a></li>
+        <li><a href="/Demarcostudent/assignments/lesson-7/gallery-7.html " title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+   
+   <!-- Container Preston Image and Responsive Image -->
+   
+<main class="container">
+
+  <div class="weatherText">
+          <p class="textW">Preston</p>
+        </div>
+    <!-- Responsive Image with different resoluions with the purpose do it responsive -->
+    <div class="mainImg">
+     
+            <figure class="snippetimg">
+                <img src="" alt="" sizes="100vw" srcset=" 800w"  >
+            </figure>
+        
+  </div>
+
+<main>
+        <h2>Preston, Idaho</h2>
+
+        <div class="snippet">
+
+            <figure class="snippetimg">
+                <img src="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/f24b4a7bf9f24d1ba5f899339e6949f3" alt="sun shining on mountains" sizes="100vw" srcset="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/f24b4a7bf9f24d1ba5f899339e6949f3 800w,
+                https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/f24b4a7bf9f24d1ba5f899339e6949f3 1160w">
+            </figure>
+
+            <section class="summary">
+
+                <h3>Weather Summary</h3>
+                <ul class="summary-list">
+                    <li>Currently: <span id="currentOutput" class="output"></span></li>
+
+                    <li>Temperature: <span id="tempOutput" class="output"></span></li>
+
+                    <li>Wind Chill: <span id="windOutput" class="output"></span></li>
+
+                    <li>Humidity: <span id="humidOutput" class="output"></span></li>
+
+                    <li>Wind Speed: <span id="speedOutput" class="output"></span></li>
+                </ul>
+
+            </section>
+        </div>
+      
+      
+     <section class="forecast">
+            <h3>5-Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr class="row01">
+                        <th>
+                            Monday
+                        </th>
+                        <th>
+                            Tuesday
+                        </th>
+                        <th>
+                            Wednesday
+                        </th>
+                        <th>
+                            Thursday
+                        </th>
+                        <th>
+                            Friday
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="dayOutput">
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+  </main>
+
+
+<footer>
+  <p class="information"> Location: Buenos Aires - </p><span>Argentina - XXXXXXXX - theweathersite@weather.com
+   &#169; - German D. De Marco Student - dem17003@byui.edyu <span id="outputDate"></span></p>
+  </footer>
+
+
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/currentDate.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/windChill.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/toggleMenu.js"></script>
+</body>
+
+</html>
