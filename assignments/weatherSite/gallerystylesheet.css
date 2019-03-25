@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+
+
+body {
+    margin: auto;
+    width: 100%;
+}
+header {
+    background-color: #ff8000;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 rgb(39, 39, 39),
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: rgb(243, 155, 55);
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: rgb(247, 244, 239);
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid rgb(247, 165, 43);
+}
+.text1 {
+  font-size: 60px;
+}
+.text2 {
+  font-size: 130px;
+}
+.text3 {
+  font-size: 100px;
+}
+
+.site-name {
+    font-family: "Arvo", "Ubuntu", Cambria, serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 100;
+    margin: 2em 0 0 0;
+}
+
+.motto {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #dfd9e2;
+    font-style: oblique;
+    padding-bottom: 10px;
+}
+
+/***************************** Termina Titulo *********************************/
+
+nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
+.navigation { list-style: none; text-align: center;   }
+  .navigation li:first-child {display: block}      /****** { display: block;} padding: .75rem;	text-align: center;	text-decoration: none; ****/
+  .navigation li { display: none;}
+  .navigation a {	display: block;	color: rgb(247, 133, 27); padding: .75rem;	text-align: center;	text-decoration: none; flex: 1 1 auto;font-size: 18px; }
+  .navigation a:hover {	color: rgb(250, 122, 3); background-color: #fff; font-weight: 700;	}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+	.responsive li { display: block; }
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 45em) {
+  .navigation li:first-child { display: none;	}
+	.navigation li { display: inline-block; margin-right: 1rem; flex: 1 1 auto;}	
+  .navigation li a { color:rgb(247, 133, 27)}
+  .navigation, .container { flex-direction: row; }
+}
+
+/***************************** Preston Sub *********************************/
+
+/* this is my Css code for the main Letters in my page */
+
+
+
+
+  /********************* Preston Sub ******************/
+
+.container {
+    display: grid;
+    grid-template-columns: auto ;
+    box-shadow: 0 0 30px #333;
+}
+
+
+  /*********************  ForeCast Begin *****************/
+
+
+/* Code for Image Box */
+
+
+
+  /********************* ForeCast End ******************/
+
+
+
+  .imagenesBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0 0 50px rgb(77, 75, 75);
+}
+
+.gallery figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+div.imagenesBox figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    color: #353636;
+    font-size: 18px;
+}
+
+.current {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: .7em;
+}
+
+
+
+
+p,
+figcaption,
+legend,
+label {
+    font-family: "Libre Baskerville", Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-family: Ubuntu, sans-serif;
+    color: #e02c86;
+    text-align: center;
+}
+
+
+ @media only screen and (max-width: 700px) {
+  .imagenesBox { display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-columns: none; }
+  .plate {
+    font-size-adjust: 0.50;
+    width:80%;
+
+  }
+	 
+.container {
+		 
+	 grid-template-columns: 1fr ;
+			 grid-template-columns: none; 
+		 } 
+	 
+  
+.textw {
+    font-size-adjust: 0.50;
+    width:50%;
+	  text-align: left;
+		 }
+	 
+
+}
+
+	 
+footer {
+   text-align: center;
+   background-color: #cdcfd3;
+   border: 2px solid black;
+}
