@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="en-us">
+<!--  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
+     <meta name="description" content="De Marco Student Wheather Site">
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
+     <!---  Normalize and Stylesheet, in this case I prefer it for localhost -->
+    
+     <link href="fishhavenStyle.css" rel="stylesheet">
+     <link href="/Demarcostudent/assignments/lesson-7/css/normalize.css" rel="stylesheet">
+     
+</head>
+<body>
+
+<header>   
+        <img src="weatherlogo.png" class="logo" alt="">
+
+        <div class="heading">
+            <h1 class="site-name">Eyes in the Weather</h1>
+            <div class="motto">Pure as nature</div>
+        </div>
+    </header>
+
+    <!-- Navegation Bar  -->
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="preston.html" title="Preston">Preston</a></li>
+        <li><a href="sondaSprings.html" title="Sonda Springs">Sonda Springs</a></li>
+        <li><a href="fishHavent.html" title="Fish Havent">Fish Havent</a></li>
+        <li><a href="#" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery.html " title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+   
+
+<main>
+        <h2>Fish Havent</h2>
+
+        <div class="snippet">
+
+            <figure class="snippetimg">
+                <img src="fallFishhavent.jpeg" alt="fall in Fish Havent" sizes="100vw" srcset="fallFishhavent.jpeg 700w,
+                fallFishhavent.jpeg 1060w">
+            </figure>
+
+            <section class="summary">
+
+                <h3>Weather Summary</h3>
+                <ul class="summary-list">
+                    <li>Currently: <span id="currentOutput" class="output"></span></li>
+
+                    <li>Temperature: <span id="tempOutput" class="output"></span></li>
+
+                    <li>Wind Chill: <span id="windOutput" class="output"></span></li>
+
+                    <li>Humidity: <span id="humidOutput" class="output"></span></li>
+
+                    <li>Wind Speed: <span id="speedOutput" class="output"></span></li>
+                </ul>
+
+            </section>
+        </div>
+      
+      
+     <section class="forecast">
+            <h3>5-Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr class="row01">
+                        <th>
+                            Monday
+                        </th>
+                        <th>
+                            Tuesday
+                        </th>
+                        <th>
+                            Wednesday
+                        </th>
+                        <th>
+                            Thursday
+                        </th>
+                        <th>
+                            Friday
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="dayOutput">
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+  </main>
+<article class="preview">
+
+
+                <div class="articleContent">
+
+                    <div class="article-item">
+                        <h3 class="articleHeading">Today</h3>
+                        <h4></h4>
+                    </div>
+
+                        <p>
+                        </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16849.505079114904!2d-112.02246697245575!3d42.62115584811812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875571853b2187ab%3A0xb3eaf2390954401d!2sLava+Hot+Springs%2C+Idaho+83246%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1553486274755" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <a href="#"></a>
+  </div>
+
+        </article>
+
+
+<footer>
+  <p class="information"> Location: Idaho  </p><span>Argentina - XXXXXXXX - theweathersite@weather.com
+   &#169; - German D. De Marco Student - dem17003@byui.edyu <span id="outputDate"></span></p>
+  </footer>
+
+
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/currentDate.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/windChill.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/toggleMenu.js"></script>
+</body>
+
+</html>
