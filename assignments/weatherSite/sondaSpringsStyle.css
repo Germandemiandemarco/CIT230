@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:700');
 
+
 body {
     margin: auto;
     width: 100%;
@@ -65,31 +66,31 @@ figcaption,
 legend,
 label {
     font-family: "Libre Baskerville", Georgia, 'Times New Roman', Times, serif;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 h2 {
     font-size: 1.7em;
     font-family: Ubuntu, sans-serif;
-    color: #ff8000;
+    color: #a4db4b;
     text-align: center;
 }
 
 h3 {
     font-size: 1.5em;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #ff8000;
+    color: #003cff62;
     text-align: center;
 }
 
 h4 {
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #3f4743;
+    color:#a4db4b;
 }
 
 h5 {
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #456990;
+    color: #a4db4b;
     font-size: 1em;
 }
 
@@ -176,6 +177,9 @@ th {
     font-weight: 100;
 }
 
+inframe {
+  position: rigth;
+}
 table,
 th,
 td {
@@ -190,31 +194,26 @@ td {
 }
 
 .preview {
-    background-color: #dfd9e2;
+    background-color: #a4db4b;
     padding: 10px;
+    box-shadow: 2em;
 }
 
-.articleGroup {
-    display: flex;
-    flex-flow: column nowrap;
-}
 
-article figure.previewimg {
-    width: 98%;
-    margin: auto;
-}
+  
 
-article figure.previewimg img {
-    width: 100%;
-}
 
-.articleGroup h3 {
-    text-align: left;
-}
+
+
+
+
+
+
+
 
 .preview a {
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #456990;
+    color: #a4db4b;
     font-size: 1.2em;
 }
 
@@ -223,82 +222,6 @@ article figure.previewimg img {
     color: #3f4743;
 }
 
-.gallery {
-    display: grid;
-}
-
-.gallery img {
-    width: 100%;
-}
-
-.gallery figcaption {
-    text-align: center;
-    padding: 10px 0;
-}
-
-form fieldset {
-    margin: 1em;
-    padding: 1em 0 1em 1em;
-}
-
-form legend {
-    color: #456990;
-    font-size: 1.3em;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    border-left: 1px solid #3f4743;
-    border-right: 1px solid #3f4743;
-    border-top: 1px solid #3f4743;
-    padding: 10px 10px 0 10px;
-}
-
-form input, form button {
-    margin: .4em;
-}
-
-form input {
-    padding: .65em;
-}
-
-
-form label.userInput {
-    display: block;
-    padding-top: 2em;
-}
-
-form label.userInput input, form button {
-    display: block;
-}
-
-.comments {
-    height: 50px;
-    width: 55%;
-}
-
-.highSpace {
-    padding-bottom: 5px;
-}
-
-.moreSpace {
-    padding: 5px 5px 5px 0;
-    margin: 0;
-    display: block;
-}
-
-form button {
-    border: none;
-    border-radius: 10px;
-    padding: 1em;
-    width: 90%;
-    font-size: 1.3em;
-    font-family: "Patua One", "Big Caslon", Cambria, serif;
-    color: #456990;
-    background-color: #dfd9e2;
-    margin: 1.5em 0 0 0;
-}
-
-#stormRating {
-    width: 80%;
-}
 
 main figure.homeimg {
     width: 97%;
