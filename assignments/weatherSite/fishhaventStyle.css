@@ -103,9 +103,11 @@ h5 {
     position: relative;
 }
 
+
 main figure.snippetimg {
-    width: 97%;
+    width: 100%;
     margin: auto;
+    height: 50%;
 }
 
 main figure.snippetimg img {
