@@ -47,7 +47,8 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(189, 210, 228);	}
   .navigation li:first-child { display: none;	}
 	.navigation li { display: inline-block; margin-right: 1rem; flex: 1 1 auto;}	
   .navigation li a { color:rgb(107, 109, 233)}
-  .navigation, .container { flex-direction: row; }
+  .navigation, .container { flex-direction: row;}
+  .forecast { display:none;}
 }
 
 
@@ -77,20 +78,9 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     color: #0077ff;
     text-align: center;
-}
-
-h4 {
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #3f4743;
-}
-
-h5 {
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #456990;
-    font-size: 1em;
 }
 
 
@@ -102,13 +92,6 @@ h5 {
     display: grid;
     position: relative;
 }
-
-
-main figure.snippetimg {
-    width: 100%;
-    margin: auto;
-}
-
 
 main figure.snippetimg {
     width: 100%;
@@ -153,14 +136,15 @@ main figure.snippetimg img {
 }
 
 .forecast {
-    display: none;
+    display: block;
     width: 100%;
     text-align: center;
     margin: 1em auto;
 }
 
 table {
-    border: 1px #dfd9e2 solid;
+    border: 2px #dfd9e2 solid;
+  shadow-box:
     border-collapse: collapse;
     text-align: center;
     margin: auto;
@@ -232,86 +216,7 @@ article figure.previewimg img {
     color: #3f4743;
 }
 
-.gallery {
-    display: grid;
-}
 
-.gallery img {
-    width: 100%;
-}
-
-.gallery figcaption {
-    text-align: center;
-    padding: 10px 0;
-}
-
-form fieldset {
-    margin: 1em;
-    padding: 1em 0 1em 1em;
-}
-
-form legend {
-    color: #456990;
-    font-size: 1.3em;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    border-left: 1px solid #3f4743;
-    border-right: 1px solid #3f4743;
-    border-top: 1px solid #3f4743;
-    padding: 10px 10px 0 10px;
-}
-
-form input, form button {
-    margin: .4em;
-}
-
-form input {
-    padding: .65em;
-}
-
-#stormRating {
-    margin: 0;
-    padding: 0;
-}
-
-form label.userInput {
-    display: block;
-    padding-top: 2em;
-}
-
-form label.userInput input, form button {
-    display: block;
-}
-
-.comments {
-    height: 50px;
-    width: 55%;
-}
-
-.highSpace {
-    padding-bottom: 5px;
-}
-
-.moreSpace {
-    padding: 5px 5px 5px 0;
-    margin: 0;
-    display: block;
-}
-
-form button {
-    border: none;
-    border-radius: 10px;
-    padding: 1em;
-    width: 90%;
-    font-size: 1.3em;
-    font-family: "Patua One", "Big Caslon", Cambria, serif;
-    color: #456990;
-    background-color: #dfd9e2;
-    margin: 1.5em 0 0 0;
-}
-
-#stormRating {
-    width: 80%;
-}
 
 main figure.homeimg {
     width: 97%;
@@ -330,37 +235,10 @@ main figure.homeimg img {
     display: none;
 }
 
-.townimg {
-    margin: 0;
-}
-
-#townInfo {
-    display: grid;
-}
-
-#townInfo img {
-    width: 100%;
-}
-
-.town {
-    box-shadow: 0 0 30px #3f4743;
-    margin: 20px;
-}
-
-.town p {
-    text-align: center;
-}
-
-.strong {
-    font-weight: bold;
-}
-
-.town .motto {
-    color: #3f4743;
-}
 
 footer {
    text-align: center;
    background-color: #cdcfd3;
    border: 2px solid black;
 }
+
