@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en-us">
+<!-- Head  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
+     <meta name="Weather Site" content="De Marco Student Wheather Site">
+     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
+     <!---  Normalize and Stylesheet, in this case I prefer it for localhost -->
+    
+     <link href="home.css" rel="stylesheet">
+     <link href="/Demarcostudent/assignments/lesson-7/css/normalize.css" rel="stylesheet">
+     
+
+  </head>
+<body>
+
+ <header>   
+        <img src="weatherlogo.png" class="logo" alt="">
+
+        <div class="heading">
+            <h1 class="site-name">Eyes in the Weather</h1>
+            <div class="motto">Pure as nature</div>
+        </div>
+    </header>
+
+    <!-- Navegation Bar  -->
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="home.html" title="Home">Home</a></li>
+        <li><a href="preston.html" title="Preston">Preston</a></li>
+        <li><a href="sondaSprings.html" title="Sonda Springs">Sonda Springs</a></li>
+        <li><a href="fishHavent.html" title="Fish Havent">Fish Havent</a></li>
+        <li><a href="/Demarcostudent/assignments/lesson8/stormcenter.html" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery.html " title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+
+
+<main>
+  <!-- Main Town -->      
+  
+        <h2>Towns around Idaho</h2>
+        
+  <figure class="snippetimg">
+                <img src="" alt="look homepage " sizes="100vw" srcset=" 700w,
+                1060w">
+            </figure>
+  
+  
+<div class ="cities">
+            <section class = "town">
+            <h3>City: <span id="city0">Preston</span></h3>
+            <p>Motto: <span id="motto0"></span></p>
+            <p>Year Founded: <span id="year0"></span></p>
+            <p>Population: <span id="population0"></span></p>
+            <p>Annual Rainfall: <span id="rain0"></span></p>
+              <img  alt="Preston" src=""  >
+        </section>
+        
+ <section class = "town">
+            <h3>City: <span id="city2">Fish Havent</span></h3>
+            <p>Motto: <span id="motto2"></span></p>
+            <p>Year Founded: <span id="year2"></span></p>
+            <p>Population: <span id="population2"></span></p>
+            <p>Annual Rainfall: <span id="rain2"></span></p>
+          <img  alt=" Fish Havent " src="">
+        </section>
+        
+ <section class = "town">
+            <h3>City: <span id="city6"> Soda Spring</span></h3>
+            <p>Motto: <span id="motto6"></span></p>
+            <p>Year Founded: <span id="year6"></span></p>
+            <p>Population: <span id="population6"></span></p>
+            <p>Annual Rainfall: <span id="rain6"></span></p>
+          <img alt= "springfield" src="">
+        </section>
+        </div>
+        
+    </main>
+
+  
+<footer>
+  <p class="information"> Location: Buenos Aires - Argentina - theweathersite@weather.com</p>
+  
+    <p class="contact"> &#169; - German D. De Marco Student - dem17003@byui.edyu <span id="outputDate"></span></p>
+  </footer>
+   <script src="/Demarcostudent/assignments/lesson-7/scripts/toggleMenu.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/currentDate.js"></script>
+  <script src="/Demarcostudent/assignments/lesson-7/scripts/windChill.js"></script>
+   <script src="/Demarcostudent/assignments/Lesson9-Json/jsonWeather.js"></script>
+  </body>
+
+</html>
