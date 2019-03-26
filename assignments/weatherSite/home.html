@@ -1,4 +1,5 @@
-<!doctype html>
+
+      <!doctype html>
 
 <html lang="en-us">
 <!-- Head  -->
@@ -7,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      
     <title>The Weather Site | town Of Preston | Weather Conditions and Forecast </title>
-     <meta name="Weather Site" content="De Marco Student Wheather Site">
+     <meta name="description" content="De Marco Student Wheather Site">
      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     
      <!---  Normalize and Stylesheet, in this case I prefer it for localhost -->
     
-     <link href="home.css" rel="stylesheet">
+     <link href="/Demarcostudent/assignments/Lesson9-Json/homeStylesheet.css" rel="stylesheet">
      <link href="/Demarcostudent/assignments/lesson-7/css/normalize.css" rel="stylesheet">
      
 
@@ -33,12 +34,12 @@
     <nav>
       <ul class="navigation">
         <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li><a href="home.html" title="Home">Home</a></li>
-        <li><a href="preston.html" title="Preston">Preston</a></li>
-        <li><a href="sondaSprings.html" title="Sonda Springs">Sonda Springs</a></li>
-        <li><a href="fishHavent.html" title="Fish Havent">Fish Havent</a></li>
+        <li><a href="/Demarcostudent/assignments/Lesson9-Json/home.html" title="Home">Home</a></li>
+        <li><a href="/Demarcostudent/assignments/lesson-7/preston.html" title="Preston">Preston</a></li>
+        <li><a href="#" title="Sonda Springs">Sonda Springs</a></li>
+        <li><a href="#" title="Fish Havent">Fish Havent</a></li>
         <li><a href="/Demarcostudent/assignments/lesson8/stormcenter.html" title="Storm Center">Storm Center</a></li>
-        <li><a href="gallery.html " title="Gallery">Gallery</a></li>
+        <li><a href="/Demarcostudent/assignments/lesson-7/gallery-7.html " title="Gallery">Gallery</a></li>
       </ul>
     </nav>
 
@@ -50,7 +51,7 @@
         <h2>Towns around Idaho</h2>
         
   <figure class="snippetimg">
-                <img src="home.jpg" alt="look homepage " sizes="home.jpg 100vw" srcset="home.jpg 700w,
+                <img src="home.jpg" alt="look homepage " sizes="home.jpg 100vw" srcset=" 700w,home.jpg
                 1060w">
             </figure>
   
@@ -62,7 +63,7 @@
             <p>Year Founded: <span id="year0"></span></p>
             <p>Population: <span id="population0"></span></p>
             <p>Annual Rainfall: <span id="rain0"></span></p>
-              <img  alt="Preston" src=""  >
+              <img  alt="Franklin" src="data:image/jpeg;base64,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"  >
         </section>
         
  <section class = "town">
@@ -71,16 +72,16 @@
             <p>Year Founded: <span id="year2"></span></p>
             <p>Population: <span id="population2"></span></p>
             <p>Annual Rainfall: <span id="rain2"></span></p>
-          <img  alt=" Fish Havent " src="">
+          <img  alt=" GreenVile " src="https://hrmservices.org/wp-content/uploads/post/138/untitled-3-300x200.jpg">
         </section>
         
  <section class = "town">
-            <h3>City: <span id="city6"> Soda Spring</span></h3>
+            <h3>City: <span id="city6">Spring</span></h3>
             <p>Motto: <span id="motto6"></span></p>
             <p>Year Founded: <span id="year6"></span></p>
             <p>Population: <span id="population6"></span></p>
             <p>Annual Rainfall: <span id="rain6"></span></p>
-          <img alt= "springfield" src="">
+          <img alt= "springfield" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Grangeville%2C_Idaho.jpg/250px-Grangeville%2C_Idaho.jpg">
         </section>
         </div>
         
