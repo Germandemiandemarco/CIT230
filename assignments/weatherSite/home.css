@@ -138,6 +138,38 @@ main figure.snippetimg img {
 	opacity: .5;
 }
  
+article {
+        width: auto;
+      background-color: #cdcfd3;
+   border: 2px solid black;
+   margin: 2em;
+   text-align: center;
+   
+    }
+    .image-wrapper {
+        width: 100px;
+        float: left;
+        padding-right: 25px;
+        padding-bottom: 10px;
+    }
+    .image-wrapper img {
+        width: 50%;
+    }
+
+    .image-wrapper span {
+        font-family: sans-serif;
+        font-size: 10px;
+        color: #ccc;
+    }
+
+    .article-meta {
+        font-family: sans-serif;
+        color: #aaa;
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+    }
  
  .town h3 {
      text-align: center;
