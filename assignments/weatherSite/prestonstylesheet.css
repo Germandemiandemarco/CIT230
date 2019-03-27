@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #ff8000;
+    background-color: #f59944;
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
@@ -16,26 +16,26 @@ header {
 
 .site-name {
     font-family: "Arvo", "Ubuntu", Cambria, serif;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #ffffff;
-    font-weight: 100;
+    font-weight: 120;
     margin: 2em 0 0 0;
 }
 
 .motto {
-    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #dfd9e2;
     font-style: oblique;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 
-nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
+nav {	margin:  auto;	 width: 100%; background-color: rgb(238, 227, 178);	}
 .navigation { list-style: none; text-align: center;   }
   .navigation li:first-child {display: block}      /****** { display: block;} padding: .75rem;	text-align: center;	text-decoration: none; ****/
   .navigation li { display: none;}
-  .navigation a {	display: block;	color: rgb(247, 133, 27); padding: .75rem;	text-align: center;	text-decoration: none; flex: 1 1 auto;font-size: 18px; }
-  .navigation a:hover {	color: rgb(250, 122, 3); background-color: #fff; font-weight: 700;	}
+  .navigation a {	display: block;	color: rgb(224, 171, 92); padding: .75rem;	text-align: center;	text-decoration: none; flex: 1 1 auto;font-size: 18px; }
+  .navigation a:hover {	color: rgb(224, 171, 92); background-color: #fff; font-weight: 700;	}
 
 /* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
   <ul class="navigation responsive">
@@ -46,9 +46,9 @@ nav {	margin:  auto;	 width: 100%; background-color: rgb(240, 238, 234);	}
 @media only screen and (min-width: 45em) {
   .navigation li:first-child { display: none;	}
 	.navigation li { display: inline-block; margin-right: 1rem; flex: 1 1 auto;}	
-  .navigation li a { color:rgb(247, 133, 27)}
-  .navigation, .container { flex-direction: row; }
-
+  .navigation li a { color:rgb(221, 117, 19)}
+  .navigation, .container { flex-direction: row;}
+  .forecast { display:none;}
 }
 
 
@@ -72,26 +72,15 @@ label {
 h2 {
     font-size: 1.7em;
     font-family: Ubuntu, sans-serif;
-    color: #ff8000;
+    color: #ff5100;
     text-align: center;
 }
 
 h3 {
     font-size: 1.5em;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #ff8000;
+    font-family: sans-serif;
+    color: #ff6600;
     text-align: center;
-}
-
-h4 {
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #3f4743;
-}
-
-h5 {
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #456990;
-    font-size: 1em;
 }
 
 
@@ -105,8 +94,9 @@ h5 {
 }
 
 main figure.snippetimg {
-    width: 97%;
+    width: 100%;
     margin: auto;
+    
 }
 
 main figure.snippetimg img {
@@ -141,7 +131,7 @@ main figure.snippetimg img {
 }
 
 .output {
-    color: #456990;
+    color: #75a6db;
     font-weight: bold;
 }
 
@@ -153,15 +143,15 @@ main figure.snippetimg img {
 }
 
 table {
-    border: 1px #dfd9e2 solid;
+    border: 2px #dfd9e2 solid;
     border-collapse: collapse;
     text-align: center;
     margin: auto;
 }
 
 thead {
-    background-color: #456990;
-    border: 1px #3f4743 solid;
+    background-color: orange;
+    border: 5px #3f4743 solid;
 }
 
 td {
@@ -189,6 +179,53 @@ td {
     display: block;
     margin: auto;
     padding-top: 10px;
+}
+
+
+preview {background-color: #dfd9e2;
+    padding: 10px;}
+
+
+
+
+article figure.previewimg {
+    width: 98%;
+    margin: auto;
+}
+
+article figure.previewimg img {
+    width: 100%;
+}
+
+.articleGroup h3 {
+    text-align: left;
+}
+
+
+.preview a {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #456990;
+    font-size: 1.2em;
+}
+
+
+
+
+main figure.homeimg {
+    width: 97%;
+    margin: auto;
+}
+
+main figure.homeimg img {
+    width: 100%;
+}
+
+#previewhome {
+    padding-top: 10px;
+}
+
+.homeimg {
+    display: none;
 }
 
 
@@ -221,19 +258,14 @@ td {
         color: #aaa;
         font-size: 12px;
     }
-
-main figure.homeimg {
-    width: 97%;
-    margin: auto;
-}
-
-main figure.homeimg img {
-    width: 100%;
-}
-
+    p {
+        font-size: 14px;
+    }
 
 footer {
    text-align: center;
    background-color: #cdcfd3;
    border: 2px solid black;
 }
+
+
