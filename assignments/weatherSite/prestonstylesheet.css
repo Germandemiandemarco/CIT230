@@ -1,4 +1,4 @@
-@@import url('https://fonts.googleapis.com/css?family=Arvo:700');
+@import url('https://fonts.googleapis.com/css?family=Arvo:700');
 
 body {
     margin: auto;
@@ -190,120 +190,36 @@ td {
     padding-top: 10px;
 }
 
-.preview {
-    background-color: #dfd9e2;
-    padding: 10px;
-}
 
-.articleGroup {
-    display: flex;
-    flex-flow: column nowrap;
-}
+ article {
+        width: auto;
+      background-color: #cdcfd3;
+   border: 2px solid black;
+   margin: 2em;
+   text-align: center;
+   
+    }
+    .image-wrapper {
+        width: 100px;
+        float: left;
+        padding-right: 25px;
+        padding-bottom: 10px;
+    }
+    .image-wrapper img {
+        width: 50%;
+    }
 
-article figure.previewimg {
-    width: 98%;
-    margin: auto;
-}
+    .image-wrapper span {
+        font-family: sans-serif;
+        font-size: 10px;
+        color: #ccc;
+    }
 
-article figure.previewimg img {
-    width: 100%;
-}
-
-.articleGroup h3 {
-    text-align: left;
-}
-
-.preview a {
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #456990;
-    font-size: 1.2em;
-}
-
-.article-item h5 {
-    text-align: center;
-    color: #3f4743;
-}
-
-.gallery {
-    display: grid;
-}
-
-.gallery img {
-    width: 100%;
-}
-
-.gallery figcaption {
-    text-align: center;
-    padding: 10px 0;
-}
-
-form fieldset {
-    margin: 1em;
-    padding: 1em 0 1em 1em;
-}
-
-form legend {
-    color: #456990;
-    font-size: 1.3em;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    border-left: 1px solid #3f4743;
-    border-right: 1px solid #3f4743;
-    border-top: 1px solid #3f4743;
-    padding: 10px 10px 0 10px;
-}
-
-form input, form button {
-    margin: .4em;
-}
-
-form input {
-    padding: .65em;
-}
-
-#stormRating {
-    margin: 0;
-    padding: 0;
-}
-
-form label.userInput {
-    display: block;
-    padding-top: 2em;
-}
-
-form label.userInput input, form button {
-    display: block;
-}
-
-.comments {
-    height: 50px;
-    width: 55%;
-}
-
-.highSpace {
-    padding-bottom: 5px;
-}
-
-.moreSpace {
-    padding: 5px 5px 5px 0;
-    margin: 0;
-    display: block;
-}
-
-form button {
-    border: none;
-    border-radius: 10px;
-    padding: 1em;
-    width: 90%;
-    font-size: 1.3em;
-    font-family: "Patua One", "Big Caslon", Cambria, serif;
-    color: #456990;
-    background-color: #dfd9e2;
-    margin: 1.5em 0 0 0;
-}
-
-#stormRating {
-    width: 80%;
-}
+    .article-meta {
+        font-family: sans-serif;
+        color: #aaa;
+        font-size: 12px;
+    }
 
 main figure.homeimg {
     width: 97%;
@@ -314,42 +230,6 @@ main figure.homeimg img {
     width: 100%;
 }
 
-#previewhome {
-    padding-top: 10px;
-}
-
-.homeimg {
-    display: none;
-}
-
-.townimg {
-    margin: 0;
-}
-
-#townInfo {
-    display: grid;
-}
-
-#townInfo img {
-    width: 100%;
-}
-
-.town {
-    box-shadow: 0 0 30px #3f4743;
-    margin: 20px;
-}
-
-.town p {
-    text-align: center;
-}
-
-.strong {
-    font-weight: bold;
-}
-
-.town .motto {
-    color: #3f4743;
-}
 
 footer {
    text-align: center;
